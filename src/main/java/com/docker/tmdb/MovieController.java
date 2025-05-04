@@ -30,7 +30,7 @@ public class MovieController {
 		return ResponseEntity.ok(movie);
 	}
 	
-	@PostMapping("/create")
+	@PostMapping
 	public ResponseEntity<Movie> createMovie(@RequestBody Movie movie){
 		Movie createMovie = movieService.create(movie);
 	
